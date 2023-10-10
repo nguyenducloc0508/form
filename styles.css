@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #0f172a;
+  background-image: linear-gradient(
+    to top left,
+    rgb(159, 130, 201, 0.8),
+    rgb(100, 92, 170, 0.8)
+  );
+}
+
+.form {
+  width: 60rem;
+  margin: 8rem auto;
+  padding: 4.8rem 6.4rem 4rem;
+  font-size: 1.6rem;
+  border-radius: 3.8rem;
+  background-color: #bface0;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.input,
+input[type='file'] {
+  width: 30rem;
+  height: 4rem;
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 8px 1.2rem;
+  font-family: inherit;
+  font-size: inherit;
+  transition: all 0.2s;
+}
+
+.input {
+  background-color: #eee;
+}
+
+.required {
+  background-color: rgba(224, 20, 76, 0.3);
+}
+
+textarea.input {
+  height: 7.2rem;
+}
+
+input[type='file'] {
+  padding: 8px 0;
+  height: 5.6rem;
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.input:focus {
+  outline: none;
+  box-shadow: 0 0 0 6px rgba(238, 238, 238, 0.5);
+}
+
+section:not(:last-child) {
+  margin-bottom: 3.2rem;
+}
+
+.select-sex,
+.select-course {
+  width: 30rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.select-sex div,
+.select-course div {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.section-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.section-button button,
+.btn-upload::-webkit-file-upload-button {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 1rem 2.4rem;
+  background-color: #eee;
+  border-radius: 1.2rem;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.btn-upload::-webkit-file-upload-button {
+  margin-right: 1.6rem;
+}
+
+.section-button button:hover,
+.btn-upload::-webkit-file-upload-button:hover {
+  transform: translateY(-2px);
+}
+
+.section-button button:active,
+.btn-upload::-webkit-file-upload-button:active {
+  transform: translateY(-1px);
+}
+
+.invalid-email input,
+.invalid-date input,
+.invalid-phone-number input,
+.blank input,
+.not-match input {
+  border: 1px solid #e0144c;
+}
+
+.invalid-date::after,
+.invalid-email::after,
+.invalid-phone-number::after,
+.blank::after,
+.not-match::after {
+  color: #e0144c;
+  display: block;
+  margin-top: 2px;
+  font-size: 1.2rem;
+  padding-left: 1.2rem;
+}
+
+.invalid-email::after {
+  content: '⛔ Email không hợp lệ';
+}
+
+.invalid-date::after {
+  content: '⛔ Ngày không hợp lệ';
+}
+
+.invalid-phone-number::after {
+  content: '⛔ Số điện thoại không hợp lệ';
+}
+
+.blank::after {
+  content: '⛔ Trường này không được để trống';
+}
+
+.not-match::after {
+  content: '⛔ Mật khẩu không trùng khớp';
+}

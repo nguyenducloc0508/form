@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Nguyen Duc Loc" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+    <title>Form</title>
+  </head>
+  <body>
+    <form autocomplete="off" class="form">
+      <section class="info-detail">
+        <div class="info">
+          <label for="name">Họ tên</label>
+          <div>
+            <input type="text" id="name" class="input required" autofocus />
+          </div>
+        </div>
+        <div class="info">
+          <label for="address">Địa chỉ</label>
+          <input type="text" id="address" class="input" />
+        </div>
+        <div class="info">
+          <label>Giới tính</label>
+          <div class="select-sex">
+            <div class="select-male">
+              <input type="radio" id="male" name="sex" />
+              <label for="male">Nam</label>
+            </div>
+            <div class="select-female">
+              <input type="radio" id="female" name="sex" />
+              <label for="female">Nữ</label>
+            </div>
+          </div>
+        </div>
+        <div class="info">
+          <label for="birth-date">Ngày sinh</label>
+          <div>
+            <input
+              type="text"
+              id="birth-date"
+              class="input required"
+              maxlength="10"
+              placeholder="dd/mm/yyyy"
+            />
+          </div>
+        </div>
+        <div class="info">
+          <label for="email">E-mail</label>
+          <div>
+            <input type="email" id="email" class="input required" />
+          </div>
+        </div>
+        <div class="info">
+          <label for="phone-number">Điện thoại</label>
+          <div>
+            <input type="text" id="phone-number" class="input" maxlength="10" />
+          </div>
+        </div>
+        <div class="info">
+          <label>Khóa đăng ký</label>
+          <div class="select-course">
+            <div class="select-english">
+              <input type="checkbox" id="english" name="english" />
+              <label for="english">Tiếng Anh</label>
+            </div>
+            <div class="select-management">
+              <input type="checkbox" id="management" name="management" />
+              <label for="management">Quản trị</label>
+            </div>
+            <div class="select-it">
+              <input type="checkbox" id="it" name="it" />
+              <label for="it">CNTT</label>
+            </div>
+          </div>
+        </div>
+        <div class="info">
+          <label for="username">Tên đăng nhập</label>
+          <div>
+            <input type="text" id="username" class="input required" />
+          </div>
+        </div>
+        <div class="info">
+          <label for="password">Mật khẩu</label>
+          <div>
+            <input type="password" id="password" class="input required" />
+          </div>
+        </div>
+        <div class="info">
+          <label for="confirm-password">Xác nhận mật khẩu</label>
+          <div>
+            <input
+              type="password"
+              id="confirm-password"
+              class="input required"
+            />
+          </div>
+        </div>
+        <div class="info">
+          <label for="note">Ghi chú</label>
+          <textarea name="note" id="note" class="input"></textarea>
+        </div>
+        <div class="info">
+          <label for="photo">Ảnh chân dung</label>
+          <input type="file" id="photo" class="btn-upload" />
+        </div>
+      </section>
+      <section class="section-button">
+        <button type="submit" class="submit-btn">Chấp nhận</button>
+        <button class="reset-btn">Bỏ qua</button>
+      </section>
+    </form>
+  </body>
+</html>
